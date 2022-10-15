@@ -1,4 +1,4 @@
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { Route, Switch, Link } from "react-router-dom";
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -10,13 +10,11 @@ function App() {
   return (
     <div className='background'>
       <Header />
-      <HashRouter>
-        <Routes>
+        <Switch>
           <Route path='/' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/projects' element={<Projects />} />
-        </Routes>
-      </HashRouter>
+        </Switch>
       <Footer></Footer>
     </div>
 
