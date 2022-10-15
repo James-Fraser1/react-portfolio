@@ -1,4 +1,4 @@
-import { Route, Switch, Link } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -10,11 +10,11 @@ function App() {
   return (
     <div className='background'>
       <Header />
-        <Switch>
-          <Route path='/' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/projects' element={<Projects />} />
-        </Switch>
+      <Routes>
+        <Route path='/' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/projects' element={<Projects />} />
+      </Routes>
       <Footer></Footer>
     </div>
 
