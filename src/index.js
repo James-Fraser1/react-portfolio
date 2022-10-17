@@ -6,17 +6,20 @@ import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+// import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // <React.StrictMode>
+  //   {/* <HashRouter> */}
+  //   <BrowserRouter basename='/'>
+  //     <App />
+  //   </BrowserRouter>
+  //   {/* </HashRouter> */}
+  // </React.StrictMode>
   <React.StrictMode>
-    {/* <HashRouter> */}
-    <BrowserRouter basename='/'>
-      <App />
-    </BrowserRouter>
-    {/* </HashRouter> */}
-  </React.StrictMode>
+  <App />
+</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
